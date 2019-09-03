@@ -46,7 +46,7 @@ $(document).keyup(async function (event) {
         let params = "?mobile-number=" + message.message;
         $.getJSON(url + params, function () {
             // alert(response);
-            window.location.href = "/otp.html";
+            window.location.href = "otp.html";
         });
     }
 });
