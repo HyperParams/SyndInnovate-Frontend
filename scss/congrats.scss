@@ -1,0 +1,260 @@
+$dark: #555;
+$color--primary: #f13412;
+$grad1: #f48d7088;
+$grad2: #fffde58a;
+
+body {
+  //gradient bg
+  text-align: center;
+  background: linear-gradient(270deg, $grad1, $grad2);
+  opacity: 50;
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  -o-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+
+  @-webkit-keyframes AnimationName {
+    0% {
+      background-position: 0% 92%;
+    }
+
+    50% {
+      background-position: 100% 9%;
+    }
+
+    100% {
+      background-position: 0% 92%;
+    }
+  }
+
+  @-moz-keyframes AnimationName {
+    0% {
+      background-position: 0% 92%;
+    }
+
+    50% {
+      background-position: 100% 9%;
+    }
+
+    100% {
+      background-position: 0% 92%;
+    }
+  }
+
+  @-o-keyframes AnimationName {
+    0% {
+      background-position: 0% 92%;
+    }
+
+    50% {
+      background-position: 100% 9%;
+    }
+
+    100% {
+      background-position: 0% 92%;
+    }
+  }
+
+  @keyframes AnimationName {
+    0% {
+      background-position: 0% 92%;
+    }
+
+    50% {
+      background-position: 100% 9%;
+    }
+
+    100% {
+      background-position: 0% 92%;
+    }
+  }
+}
+
+.typo {
+  font-size: 5rem;
+  font-weight: 700;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #585858;
+  text-decoration: none;
+
+  option {
+    font-size: 30px;
+  }
+}
+
+.transition {
+  transition: all 0.4s ease-in-out;
+}
+
+.wrapper {
+  padding-top: 150px;
+  height: 100vh;
+  font-size: 5rem;
+}
+
+.list {
+  display: inline-block;
+  position: relative;
+  //border: 1px solid red;
+  margin-left: 6px;
+
+  ul {
+    text-align: left;
+    position: absolute;
+    padding: 0;
+    top: 0;
+    left: 0;
+    display: none;
+
+    .active {
+      display: block;
+    }
+  }
+
+  li {
+    list-style: none;
+
+    &:first-child a {
+      color: desaturate($color--primary, 50%);
+    }
+  }
+
+  a {
+    @extend .typo;
+    transition: all 0.4s;
+    color: $color--primary;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: "";
+      height: 5px;
+      width: 0;
+      left: 0;
+      background: lighten($color--primary, 20%);
+      bottom: 0;
+      transition: all 0.4s ease-out;
+    }
+
+    &:hover {
+      cursor: pointer;
+      color: lighten($color--primary, 20%);
+
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+select {
+  display: inline;
+  border: 0;
+  // width: auto;
+  margin-left: 10px;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-bottom: 2px solid $dark;
+  // color: $color--primary;
+  transition: all 0.4s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  option {
+    border: 0;
+    border-bottom: 1px solid $dark;
+    padding: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+}
+
+.placeholder {
+  //visibility: hidden;
+  //position: fixed;
+  border-bottom: 4px solid;
+  cursor: pointer;
+
+  &:hover {
+    color: lighten($dark, 20%);
+  }
+}
+
+.hide {
+  opacity: 0;
+}
+
+.item {
+  opacity: 0.4;
+  transition: 0.4s ease all;
+  margin: 0 20px;
+  transform: scale(0.8);
+}
+@media (max-width: 1000px) {
+  .item {
+    margin: 0;
+    transform: scale(0.9);
+  }
+}
+.active .item {
+  opacity: 1;
+  transform: scale(1);
+}
+// body {
+//   padding: 0;
+//   margin: 80px 0 0 0;
+//   font-family: Merriweather;
+//   background: #f0e8d5;
+// }
+
+.owl-item {
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1, 1);
+}
+
+.inner {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.inner a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  transition: 0.3s ease border-color;
+}
+.inner a:hover {
+  border-color: #fff;
+}
+.black .inner a {
+  color: #000;
+  border-color: rgba(0, 0, 0, 0.4);
+}
+.black .inner a:hover {
+  border-color: #000;
+}
+
+.owl-carousel:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8%;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -4%;
+  pointer-events: none;
+  background-size: 100% auto;
+}
+
+.owl-controls {
+  position: absolute;
+  margin-top: 300px;
+}

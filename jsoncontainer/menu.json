@@ -1,0 +1,47 @@
+{
+    //Set types for mess1
+    "abh":{
+        "mon":["•Aloo Parantha/ Omlette and Toast\n•Tea/Milk",
+            "•Capsicum Chilli, Raita, Rajma\n•Rice, Chapati",
+            "•Poha\n•Tea/Milk",
+            "•Egg Curry/ Malai Kofta, Kheer\n•Chapati"
+        ],
+        "tue":["•Stuffed Parantha/ Omlette and Toast\n•Butter,Tea/Milk",
+            "•Kadi-Pakora, Hari Subzi\n•Rice, Chapati",
+            "•Macroni\n•Tea/Milk",
+            "•Shai Paneer, Custard, Chole\n•Chapati, Pulao"
+        ],
+        "wed":["•Parantha/ Omlette and Toast\n•Tea/Milk",
+            "•Seasonal Subzi, Dal\n•Rice, Chapati",
+            "•Pastry\n•Tea/Milk",
+            "•Chiclken-Curry/ Khadai-Paneer, Halwa\n•Chapati, Pulao"
+        ],
+        thu:["•Parantha/ Omlette and Toast\n•Tea/Milk",
+            "•Dal Makhni, Seasonl Subzi\n•Rice, Chapati",
+            "•Bread Pakora\n•Tea/Milk",
+            "•Mix Veg/ Aloo, Dal, Gulab Jamum\n•Chapati, Rice"
+        ],
+        fri:["•Dosa-Sambhar/ Omlette and toast\n•Tea/Milk",
+            "•Seasonal Subzi, Rajma","Rice\n•Chapati",
+            "•Mess Closed\n•N/A",
+            "•Mess Closed\n•N/A"
+        ],
+        sat:["•Stuffed Parantha/ Omlette and toast\n•Tea/Milk",
+            "•Seasonal Subzi, Dal\n•Rice, Chapati",
+            "•Sandwitch\n•Tea/Milk",
+            "•Aloo-Matar/ Chole, Kheer\n•Rice, Chapati"
+        ],
+        sun:["•Aloo Puri/ Omlette and toast\n•Tea/Milk",
+            "•Paneer, Dal\n•Rice, Chapati",
+            "•Samosa\n•Tea/Milk",
+            "•Mix Veg, Chole\n•Rice,Chapati"
+        ]
+    }
+    snh:{
+        mon:["breakfast here", "lunch menu here", "snack menu here", "dinner menu here"],
+        tue:["breakfast here", "lunch menu here", "snack menu here", "dinner menu here"],
+        wed:["breakfast here", "lunch menu here", "snack menu here", "dinner menu here"],
+        //you get the idea
+    }
+    //and so on
+}

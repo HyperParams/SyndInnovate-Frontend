@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta charset="UTF-8">
+    <title>Review</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,900,700,600,200" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|PT+Sans" rel="stylesheet">
+    <link rel='stylesheet prefetch'
+        href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,900,700,600,200'>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="scss/review.css">
+</head>
+
+
+<body>
+
+    <div class="selectorthing">
+        <div class="wrapper typo" id="plshide">Your Rating<br>
+            <div class="list" id="touch">
+                <span class="rating">1</span> <span class="rating">2</span> <span class="rating">3</span> <span
+                    class="rating">4</span> <span class="rating">5</span>
+            </div>
+        </div>
+        <div class="wrapper typo" id="aa">Please tell us more<br>
+            <div class="list"><span class="placeholder">My review</span>
+                <ul class="list__ul">
+                    <input id="inp" v-model="message" placeholder="">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src='js/vue.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src="js/review.js"></script>
+
+</body>
+
+</html>

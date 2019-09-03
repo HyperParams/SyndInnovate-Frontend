@@ -1,0 +1,224 @@
+body {
+  text-align: center;
+  background: -webkit-gradient(linear, right top, left top, from(#f48d7088), to(#fffde58a));
+  background: linear-gradient(270deg, #f48d7088, #fffde58a);
+  opacity: 50;
+  background-size: 400% 400%;
+  -webkit-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 92%;
+  }
+  50% {
+    background-position: 100% 9%;
+  }
+  100% {
+    background-position: 0% 92%;
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 92%;
+  }
+  50% {
+    background-position: 100% 9%;
+  }
+  100% {
+    background-position: 0% 92%;
+  }
+}
+
+.typo, .list a {
+  font-size: 5rem;
+  font-weight: 700;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #585858;
+  text-decoration: none;
+}
+
+.typo option, .list a option {
+  font-size: 30px;
+}
+
+.transition {
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.wrapper {
+  padding-top: 150px;
+  height: 100vh;
+  font-size: 5rem;
+}
+
+.list {
+  display: inline-block;
+  position: relative;
+  margin-left: 6px;
+}
+
+.list ul {
+  text-align: left;
+  position: absolute;
+  padding: 0;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.list ul .active {
+  display: block;
+}
+
+.list li {
+  list-style: none;
+}
+
+.list li:first-child a {
+  color: #b26051;
+}
+
+.list a {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  color: #f13412;
+  position: relative;
+}
+
+.list a:after {
+  position: absolute;
+  content: "";
+  height: 5px;
+  width: 0;
+  left: 0;
+  background: #f78672;
+  bottom: 0;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+.list a:hover {
+  cursor: pointer;
+  color: #f78672;
+}
+
+.list a:hover:after {
+  width: 100%;
+}
+
+select {
+  display: inline;
+  border: 0;
+  margin-left: 10px;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-bottom: 2px solid #555;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+select:hover {
+  cursor: pointer;
+}
+
+select option {
+  border: 0;
+  border-bottom: 1px solid #555;
+  padding: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.placeholder {
+  border-bottom: 4px solid;
+  cursor: pointer;
+}
+
+.placeholder:hover {
+  color: #888888;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.item {
+  opacity: 0.4;
+  -webkit-transition: 0.4s ease all;
+  transition: 0.4s ease all;
+  margin: 0 20px;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+@media (max-width: 1000px) {
+  .item {
+    margin: 0;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+
+.active .item {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.owl-item {
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1, 1);
+}
+
+.inner {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.inner a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  -webkit-transition: 0.3s ease border-color;
+  transition: 0.3s ease border-color;
+}
+
+.inner a:hover {
+  border-color: #fff;
+}
+
+.black .inner a {
+  color: #000;
+  border-color: rgba(0, 0, 0, 0.4);
+}
+
+.black .inner a:hover {
+  border-color: #000;
+}
+
+.owl-carousel:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8%;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -4%;
+  pointer-events: none;
+  background-size: 100% auto;
+}
+
+.owl-controls {
+  position: absolute;
+  margin-top: 300px;
+}
+/*# sourceMappingURL=congrats.css.map */
