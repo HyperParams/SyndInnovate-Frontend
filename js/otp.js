@@ -46,7 +46,7 @@ $(document).keyup(function (event) {
         console.log(params);
         $.getJSON(url + params, function (response) {
             if (response["verified"]) {
-                window.location.href = "/SyndInnovate-Frontend/congrats.html";
+                window.location.href = "congrats.html";
             }
             else {
                 // window.location.href = "/congrats.html";
