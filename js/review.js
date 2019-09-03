@@ -50,7 +50,7 @@ $(document).keyup(function (event) {
         let url = "http://2bc5231b.ngrok.io/review/?";
         let params = "ID" + number + "&rating=" + eerating + "&review=" + longtext;
         $.getJSON(url + params, function (response) {
-            myWindow.close();
+            window.location.href = "congrats.html";
         });
     }
 });
