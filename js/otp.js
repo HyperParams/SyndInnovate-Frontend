@@ -41,7 +41,7 @@ var message = new Vue({
 $(document).keyup(function (event) {
     if ($("#inp").is(":focus") && event.key == "Enter") {
         sessionStorage.setItem('otp', message.message);
-        let url = "http://5e339b7d.ngrok.io/add/";
+        let url = "https://5e339b7d.ngrok.io/add/";
         const params = `?mobile-number=${sessionStorage.getItem('mobile-number')}&POV=${sessionStorage.getItem('POV')}&OTP=${message.message}`;
         console.log(params);
         $.getJSON(url + params, function (response) {
