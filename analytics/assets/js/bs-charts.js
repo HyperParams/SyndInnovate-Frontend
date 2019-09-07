@@ -1,6 +1,6 @@
 var de;
 $(document).ready(function () {
-	url = "http://2bc5231b.ngrok.io/get-info/";
+	url = "https://5e339b7d.ngrok.io/get-info/";
 	$.getJSON(url,
 		function (data) {
 			console.log(data);

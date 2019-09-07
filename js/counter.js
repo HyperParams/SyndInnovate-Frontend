@@ -36,7 +36,7 @@ $('#box404flavour').mouseout(function () {
 
 $('#nx').click(function (e) {
     e.preventDefault();
-    url = "https://2bc5231b.ngrok.io/counter-1/empty/";
+    url = "https://5e339b7d.ngrok.io/counter-" + counter + "/empty/";
     $.getJSON(url, function (response) {
         if (response) {
             refreshData(response);
@@ -46,7 +46,7 @@ $('#nx').click(function (e) {
 
 $('#404n').click(function (e) {
     e.preventDefault();
-    let url = "https://2bc5231b.ngrok.io/counter-1/customer-not-there/";
+    let url = "https://5e339b7d.ngrok.io/counter-" + counter + "/customer-not-there/";
     $.getJSON(url, function (response) {
         if (response) {
             refreshData(response);
@@ -59,3 +59,5 @@ function refreshData(response) {
     console.log(custo);
     $("#body-1").text(custo["mobile_number"] + ":" + custo["name"]);
 }
+
+console.log(counter);
