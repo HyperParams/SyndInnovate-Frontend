@@ -41,7 +41,7 @@ $(document).keyup(async function (event) {
     if ($("#inp").is(":focus") && event.key == "Enter") {
         let url = "https://5e339b7d.ngrok.io/verify/";
         sessionStorage.setItem('mobile-number', message.message);
-        sessionStorage.setItem('POV', "1");
+        sessionStorage.setItem('POV', Math.floor(Math.random() * 2));
         console.log(url + message.message);
         let params = "?mobile-number=" + message.message;
         $.getJSON(url + params, function () {
