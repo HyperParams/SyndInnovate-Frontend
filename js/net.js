@@ -39,7 +39,7 @@ var message = new Vue({
 });
 $(document).keyup(async function (event) {
     if ($("#inp").is(":focus") && event.key == "Enter") {
-        let url = "http://5e339b7d.ngrok.io/verify/";
+        let url = "https://5e339b7d.ngrok.io/verify/";
         sessionStorage.setItem('mobile-number', message.message);
         sessionStorage.setItem('POV', "1");
         console.log(url + message.message);
