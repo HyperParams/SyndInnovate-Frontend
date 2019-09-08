@@ -30,3 +30,8 @@ $('select').on('change', function (e) {
 });
 
 //--------------Select menu code end---------------------------------------------
+
+function redir(a) {
+  sessionStorage.setItem('POV', a);
+  window.location.href = "net.html";
+}
