@@ -1,6 +1,6 @@
 var de;
 $(document).ready(function () {
-	url = "https://34.93.89.204:80/get-info/";
+	url = "https://4a1dc90e.ngrok.io/get-info/";
 	$.getJSON(url,
 		function (data) {
 			console.log(data);

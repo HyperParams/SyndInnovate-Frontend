@@ -36,7 +36,7 @@ $('#box404flavour').mouseout(function () {
 
 $('#nx').click(function (e) {
     e.preventDefault();
-    url = "https://34.93.89.204:80/counter-" + counter + "/empty/";
+    url = "https://4a1dc90e.ngrok.io/counter-" + counter + "/empty/";
     $.getJSON(url, function (response) {
         if (response) {
             refreshData(response);
@@ -46,7 +46,7 @@ $('#nx').click(function (e) {
 
 $('#404n').click(function (e) {
     e.preventDefault();
-    let url = "https://34.93.89.204:80/counter-" + counter + "/customer-not-there/";
+    let url = "https://4a1dc90e.ngrok.io/counter-" + counter + "/customer-not-there/";
     $.getJSON(url, function (response) {
         if (response) {
             refreshData(response);

@@ -47,7 +47,7 @@ $(document).keyup(function (event) {
         console.log("enter");
         console.log(message.message);
         longtext = (message.message);
-        let url = "https://34.93.89.204:80/review/?";
+        let url = "https://4a1dc90e.ngrok.io/review/?";
         let params = "ID" + number + "&rating=" + eerating + "&review=" + longtext;
         $.getJSON(url + params, function (response) {
             window.open('', '_self').close();
